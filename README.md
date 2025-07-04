@@ -1,6 +1,21 @@
-# Nano React App Default Javascript Template
+# Base44 Site Template
 
-The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
+## What?
+
+[base44](https://base44.com/) creates really beautiful sites, which is a lifesaver for someone like me who can’t design. This is how you can make them run locally!
+
+## How?
+
+— Copy the jsx files from base44 into your directory (you can see them in base44 under Workspace > Code)
+- Fix imports between the files, if you didn't keep the original file structure
+- Install any missing shadcn components — e.g. `npx shadcn@latest add button input dialog`
+- Add any missing npm packages (in your jsx files but not in template) with `npm install`
+- Remove base44 “entity access” code (or comment out, to replace with in-memory key-value storage later)
+
+That's it!
+
+
+## Usage instructions
 
 - `npm start` — This will spawn a development server with a default port of `5173`.
 - `npm run build` — This will output a production build in the `dist` directory.
@@ -19,38 +34,3 @@ Or edit the `start` script directly:
 ```
 vite --port 3000
 ```
-
-## Adding styles
-
-You can use CSS files with simple ES2015 `import` statements anywhere in your Javascript:
-
-```js
-import "./index.css";
-```
-
-## Babel transforms
-
-The Babel preset [babel-preset-nano-react-app](https://github.com/nano-react-app/babel-preset-nano-react-app) is used to support the same transforms that Create React App supports.
-
-The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
-
-
-## Deploy to GitHub Pages
-
-You can also deploy your project using GitHub pages.
-First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
-
-`npm i -D gh-pages`
-
-Use the following scripts for deployment:
-
-```js
-"scripts": {
-  "start": "vite",
-  "build": "vite build",
-  "predeploy": "rm -rf dist && vite build",
-  "deploy": "gh-pages -d dist"
-},
-```
-
-Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
