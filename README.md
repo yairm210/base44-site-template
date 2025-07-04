@@ -8,8 +8,9 @@
 
 - Copy the jsx files from base44 into your directory (you can see them in base44 under Workspace > Code)
 - Fix imports between the files, if you didn't keep the original file structure
+- `npm install`
+- Add any missing npm packages (in your jsx files but not in template)
 - Install any missing shadcn components — e.g. `npx shadcn@latest add button input dialog`
-- Add any missing npm packages (in your jsx files but not in template) with `npm install`
 - Remove base44 “entity access” code (or comment out, to replace with in-memory key-value storage later)
 
 That's it!
