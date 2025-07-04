@@ -2,7 +2,7 @@
 
 ## What?
 
-[base44](https://base44.com/) creates really beautiful sites, which is a lifesaver for someone like me who can’t design. This is how you can make them run locally!
+[base44](https://base44.com/) creates really beautiful sites, which is a lifesaver for someone like me who can’t design. But the sites are all online and not under your control. This is how you can make them run locally!
 
 ## How?
 
